@@ -311,9 +311,10 @@ footer > p {
 }
 
 .about_me {
-  padding: 5% 30% 2% 30%;
+  padding: 5% 20% 2% 20%;
   line-height: 2.1;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 .skill_table {
@@ -361,7 +362,8 @@ footer > p {
 
 .about_animation {
   padding-top: 3%;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   text-align: center;
   z-index: -1;
 }
@@ -592,7 +594,7 @@ textarea {
   }
   .menu {
     display: block;
-    padding: 0 0 50px 0;
+    padding: 20px 0 40px 0;
   }
   .menu > ul {
     -webkit-box-pack: center;
@@ -612,7 +614,7 @@ textarea {
   }
   textarea {
     margin: auto;
-    width: 450px;
+    width: 90%;
     resize: none;
   }
   .pageTitle {
@@ -620,6 +622,23 @@ textarea {
   }
   .skill_table {
     width: 90%;
+  }
+  .about_me {
+    padding: 5% 10% 2% 10%;
+    font-size: 15px;
+  }
+  svg {
+    width: 350px;
+    height: 233.3333px;
+  }
+  #contact-form > input {
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+  }
+  .submit_button {
+    width: 90%;
+    padding: 10px;
   }
 }
 
@@ -631,7 +650,7 @@ textarea {
   }
   .menu {
     display: block;
-    padding: 0 0 50px 0;
+    padding: 20px 0 40px 0;
   }
   .menu > ul {
     -webkit-box-pack: center;
@@ -650,8 +669,38 @@ textarea {
   }
   textarea {
     margin: auto;
-    width: 450px;
+    width: 90%;
     resize: none;
+  }
+  .about_me {
+    padding: 5% 10% 2% 10%;
+  }
+  svg {
+    width: 350px;
+    height: 233.3333px;
+  }
+  #contact-form > input {
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+  }
+  .submit_button {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 667px) and (max-width: 880px) and (orientation: portrait) {
+  textarea {
+    margin: auto;
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 222px) and (max-width: 444px) and (orientation: portrait) {
+  svg {
+    width: 270px;
+    height: 180px;
   }
 }
 
