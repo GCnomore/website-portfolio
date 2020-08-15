@@ -18,10 +18,10 @@
   </head>
   <body>
     <header>
-      <nav role="navigation">
+      <nav>
         <div class="logo">
           <a href="index.html"
-            ><img id="logo" src="./img/logo.png" alt="logo" role="logo"
+            ><img id="logo" src="./img/logo.png" alt="logo"
           /></a>
         </div>
         <div class="menu">
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <h1 class="pageTitle">Contact</h1>
-    <form id="contact-form" action="" method="post">
+    <form id="contact-form" action="mailto:isaagc08@gmail.com" method="post">
       <label class="standard-label" for="contact-email">E-mail: </label>
       <input
         id="contact-email"
@@ -63,7 +63,7 @@
         required
       />
       <label class="standard-label">Message: </label>
-      <textarea maxlength="240" wrap="hard"></textarea>
+      <textarea maxlength="240" wrap="hard" cols="50"></textarea>
       <input class="submit_button" type="submit" value="Send Message" />
     </form>
     <div class="contact_info">

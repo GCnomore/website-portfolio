@@ -172,7 +172,7 @@ nav {
 }
 
 #logo {
-  width: 200px;
+  height: 40px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -612,7 +612,7 @@ textarea {
   }
   textarea {
     margin: auto;
-    width: 500px;
+    width: 450px;
     resize: none;
   }
   .pageTitle {
@@ -650,7 +650,7 @@ textarea {
   }
   textarea {
     margin: auto;
-    width: 500px;
+    width: 450px;
     resize: none;
   }
 }
