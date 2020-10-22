@@ -1,0 +1,112 @@
+.about_me {
+    padding: 5% 30% 2% 30%;
+    line-height: 2.1;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .skill_table {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .skill_table > thead > tr > td {
+    padding: var(--spacing1) 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .skill_table > tbody > tr:hover {
+    border-bottom: black 8px solid;
+    border-top: black 8px solid;
+    font-size: 20px;
+  }
+  
+  .about_button {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    font-weight: 600;
+    margin-top: 50px;
+    background-color: var(--buttonColor);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 1s opacity;
+  }
+  
+  .about_button:hover,
+  .about_button:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .about_animation {
+    padding-top: 3%;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  @keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f7af14;
+    }
+  }
+  
+  @keyframes fly-left {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-5303px, 1000px);
+    }
+  }
+  
+  @keyframes fly-right {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(5303px, 1000px);
+    }
+  }
+  
+  .svg_source {
+    display: block;
+    text-align: center;
+  }
+  
+  #path334,
+  #path332 {
+    animation: 10s fly-right infinite linear;
+  }
+  
+  #path308 {
+    animation: 3s wind infinite alternate;
+  }
+  
+  #path338,
+  #path330,
+  #path336 {
+    animation: 13s fly-left infinite linear;
+  }
+  
+  #path68,
+  #path196 {
+    animation: 4s color-change infinite alternate linear;
+  }
+  
+  #contact-form {
+    display: block;
+    text-align: center;
+    padding: 10px 0 30px 0;
+  }
