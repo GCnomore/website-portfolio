@@ -524,13 +524,28 @@ textarea {
   background-color: none;
 }
 
+.workTitle {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+.workImg {
+  width: 400px;
+}
+
+.workImgWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  padding: 5% 20%;
+  padding: 5% 10%;
 }
 
 .grid_items {
@@ -552,12 +567,6 @@ textarea {
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
-
-.grid_items > h2 {
-  font-weight: 600;
-  font-size: 20px;
-  padding-bottom: 3px;
 }
 
 .grid_items > p {
@@ -709,23 +718,85 @@ textarea {
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (max-width: 1440px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5% 2%;
   }
-  .grid_items > h2 {
-    font-size: 17px;
+  .workTitle {
+    font-size: 30px;
+  }
+  .workImg {
+    width: 390px;
+  }
+  .workDesc,
+  .workLink {
+    font-size: 20px;
+    padding: 1%;
+  }
+  .grid_items {
+    width: 410px;
   }
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+@media all and (max-width: 1024px) {
+  .workImg {
+    width: 290px;
   }
-  .grid_items > h2 {
-    font-size: 15px;
+  .grid_items {
+    width: 300px;
+  }
+  .workDesc,
+  .workLink {
+    font-size: 17px;
+    padding: 1%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_items {
+    width: 350px;
+  }
+  .workImg {
+    width: 340px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  .workTitle {
+    font-size: 23px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid_items {
+    width: 410px;
+  }
+  .workImg {
+    width: 390px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .grid_items {
+    width: 360px;
+  }
+  .workImg {
+    width: 350px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .grid_items {
+    width: 310px;
+  }
+  .workImg {
+    width: 300px;
   }
 }
