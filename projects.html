@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/logo.png" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projects</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logoContainer">
+        <a href="index.html"
+          ><img class="logo" src="./img/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="menu">
+        <ul class="menubar" role="menubar">
+          <li role="presentation">
+            <a class="projects_home" href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a class="projects_about" href="about.html" role="menuitem"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a class="projects_projects" href="projects.html" role="menuitem"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="pageTitle">Projects</h1>
+
+    <div class="projects_sort">
+      <div class="projects_iconsWrap">
+        <div class="javascript">
+          <img
+            src="./img/javascript.png"
+            alt="javascript icon"
+            class="projects_icons"
+          />
+        </div>
+        <div class="jquery">
+          <img
+            src="./img/Jquery.png"
+            alt="jquery icon"
+            class="projects_icons"
+          />
+        </div>
+        <div class="react">
+          <img
+            src="./img/React (2).png"
+            alt="react icon"
+            class="projects_icons"
+          />
+        </div>
+        <div class="nodejs">
+          <img
+            src="./img/nodejs.png"
+            alt="nodejs icon"
+            class="projects_icons"
+          />
+        </div>
+        <div class="mongodb">
+          <img
+            src="./img/MongoDB.png"
+            alt="mongodb icon"
+            class="projects_icons"
+          />
+        </div>
+        <div class="vue">
+          <img src="./img/Vue.png" alt="vue icon" class="projects_icons" />
+        </div>
+        <div class="angular">
+          <img
+            src="./img/Angular.png"
+            alt="angular icon"
+            class="projects_icons"
+          />
+        </div>
+      </div>
+      <button class="clearBtn">CLEAR</button>
+    </div>
+
+    <div class="container-fluid sliderContainer">
+      <div class="row projectsContainer">
+        <!-- pokedex slider -->
+        <div class="col javascript jquery">
+          <a
+            href="https://gcnomore.github.io/pokedex/"
+            target="_blank"
+            class="slidesWrap pokeSlideCont"
+          >
+            <div class="carousel-item pokedexSlide active">
+              <img
+                src="./img/projects/pokedex.PNG"
+                class="d-block"
+                alt="pokedex screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>List of Pokemon cards colored by their types</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/pokedex2.PNG"
+                class="d-block"
+                alt="pokedex screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Click the cards to see their details</p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              A simple <strong>Vanila Javascript</strong> project to build
+              PokeDex. Displays Pokemons in their number order with detailed
+              information in modal window. Implented infinite scroll function.
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#Javascript #Jquery #Animate.css #Bootstrap</strong
+              >
+              <br />
+              <br />
+              <a href="https://gcnomore.github.io/pokedex/" target="_blank"
+                ><strong>See app</strong></a
+              >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <a href="https://github.com/GCnomore/pokedex" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- moviehunt slider -->
+        <div class="col javascript react nodejs mongodb">
+          <a
+            href="https://moviehunt-gc.herokuapp.com/client/"
+            target="_blank"
+            class="slidesWrap movieSlideCont"
+          >
+            <div class="carousel-item moviehuntSlide active">
+              <img
+                src="./img/projects/moviehunt1.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Users can login using their existing account</p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt2.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Users can register if they don't have an account</p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt3.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>List of some of my favorite movies</p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt4.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 4"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Click the movie card to see details. Users can add selected
+                  movie to their favorite list.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt5.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 5"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Click on Genre to see other movies with same genre</p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt6.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 6"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Click on Director to see other movies filmed by the same
+                  director
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item moviehuntSlide">
+              <img
+                src="./img/projects/moviehunt7.PNG"
+                class="d-block"
+                alt="moviehunt screenshot 7"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Showing user account page. Users can update their info and
+                  favorite list.
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              Full stack project made with <strong>MERN stack</strong> This
+              project uses database I created with some of my favorite movies.
+              It can register a user and save their account info to the
+              database. Used Heroku to host this app.
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#Javascript #React #Express #NodeJS #MongoDB #Redux #Bootstrap
+                #Passport #Heroku</strong
+              >
+              <br />
+              <br />
+              <a
+                href="https://moviehunt-gc.herokuapp.com/client/"
+                target="_blank"
+                ><strong>See app</strong></a
+              >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <a href="https://github.com/GCnomore/movieHunt" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- thisquiz slider -->
+        <div class="col typescript angular">
+          <a
+            href="https://gcnomore.github.io/quizApp/welcome"
+            target="_blank"
+            class="slidesWrap quizSlideCont"
+          >
+            <div class="carousel-item quizSlide active">
+              <img
+                src="./img/projects/thisquiz.PNG"
+                class="d-block"
+                alt="This Quizz screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>User can select desired quizes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/thisquiz1.PNG"
+                class="d-block"
+                alt="This Quizz screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Mutiple choice option</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/projects/thisquiz2.PNG"
+                class="d-block"
+                alt="This Quizz screenshot 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Result page showing how a user did</p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              A simple quiz app built with <strong>Angular.</strong> Currently
+              only has 2 quiz categories: math and French.
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#TypeScript #Angular #Material-Design</strong
+              >
+              <br />
+              <br />
+              <a
+                href="https://gcnomore.github.io/quizApp/welcome"
+                target="_blank"
+                ><strong>See app</strong></a
+              >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <a href="https://github.com/GCnomore/quizApp" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- todo slider -->
+        <div class="col javascript vue">
+          <a
+            href="https://gcnomore.github.io/todoApp/"
+            target="_blank"
+            class="slidesWrap todoSlideCont"
+          >
+            <div class="carousel-item todoSlide active">
+              <img
+                src="./img/projects/todo1.PNG"
+                class="d-block"
+                alt="To-Do screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Users can a to dos with title and content</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/todo2.PNG"
+                class="d-block"
+                alt="To-Do screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>To do will be added as a card</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/projects/todo3.PNG"
+                class="d-block"
+                alt="To-Do screenshot 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>User can edit, delete, drage and drop cards</p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              To do list app built with <strong>Vue.</strong> Used Its data will
+              be stored in local storage. It provides drag and drop feature to
+              sort to-dos in user's priority.
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#Javascript #Vue #Material-Design</strong
+              >
+              <br />
+              <br />
+              <a href="https://gcnomore.github.io/todoApp/" target="_blank"
+                ><strong>See app</strong></a
+              >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <a href="https://github.com/GCnomore/todoApp" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- watspoppin slider -->
+        <div class="col javascript react aws">
+          <a
+            href="https://gcnomore.github.io/watspoppin/"
+            target="_blank"
+            class="slidesWrap watspoppinSlideCont"
+          >
+            <div class="carousel-item watspoppinSlide active">
+              <img
+                src="./img/projects/watspoppin1.PNG"
+                class="d-block"
+                alt="Wats Poppin screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Authenticate user with their Google account</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/watspoppin2.PNG"
+                class="d-block"
+                alt="Wats Poppin screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Main page shows all available events with pie chart and
+                  scatter chart
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/projects/watspoppin3.PNG"
+                class="d-block"
+                alt="Wats Poppin screenshot 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  List of events - details are collapsed by default - can be
+                  expanded with show detail button
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/watspoppin4.PNG"
+                class="d-block"
+                alt="Wats Poppin screenshot 4"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Search events by city name</p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              Event searching application made with Careerfoundry's Google
+              Calander API. Implented OAuth for user authentication. Some
+              commponents were coded as object oriented programming.
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#Javascript #React #AWS #Atatus #Jest #Peppeteer #Enzyme
+                #Rechart #OAuth</strong
+              >
+              <br />
+              <br />
+              <a href="https://gcnomore.github.io/watspoppin/" target="_blank"
+                ><strong>See app</strong></a
+              >&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <a href="https://github.com/GCnomore/watspoppin" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- KOKOA talk slider -->
+        <div class="col javascript react firebase">
+          <a
+            href="https://github.com/GCnomore/chatApp"
+            target="_blank"
+            class="slidesWrap kokoatalkSlideCont"
+          >
+            <div class="carousel-item kokoatalkSlide active">
+              <img
+                src="./img/projects/kokoatalk1.PNG"
+                class="d-block"
+                alt="KOKOA Talk screenshot 1"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>
+                  Users can enter their name and select color of chat screen on
+                  main screen
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/projects/kokoatalk2.PNG"
+                class="d-block"
+                alt="KOKOA Talk screenshot 2"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Three actions are available</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./img/projects/kokoatalk3.PNG"
+                class="d-block"
+                alt="KOKOA Talk screenshot 3"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Example view of messages</p>
+              </div>
+            </div>
+          </a>
+          <div class="description">
+            <p>
+              Chat app made with
+              <strong>React Native and GiftedChat</strong> with given design
+              instruction. Users have option to change the color of the chat
+              screen. Photo from library, directly from camera, and current
+              location can be sent as a message. Message data will be stored in
+              <strong>asyncstorage and Firebase.</strong>
+              <br />
+              <br />
+              <strong style="word-spacing: 15px"
+                >#Javascript #React Native #Expo #Firebase #Firestore</strong
+              >
+              <br />
+              <br />
+              <a href="https://github.com/GCnomore/chatApp" target="_blank"
+                ><strong>See code</strong></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Find me on</p>
+      <a target="_blank" href="https://github.com/GCnomore"
+        ><img class="icons" src="img/github_icon.svg" alt="github"
+      /></a>
+      <a href="https://twitter.com/IsaacCh99785355" target="_blank">
+        <img class="icons" src="img/twitter_icon.svg" alt="twitter" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/isaac-choi-6a68bb1b4/"
+      >
+        <img class="icons" src="img/linkedin_icon.svg" alt="linkedin" />
+      </a>
+      <a href="mailto:isaagc08@gmail.com" target="_blank">
+        <img src="img/gmail.png" alt="gmail" class="icons gmail" />
+      </a>
+    </footer>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

@@ -3,25 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/logo.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="icon"
-      type="image/png"
-      href="./img/favicon-16x16.png"
-      sizes="16x16"
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
       rel="stylesheet"
     />
-    <title>Hyungseok Choi - Portfolio</title>
+    <title>Isaac Choi - Portfolio</title>
   </head>
   <body>
+    <img
+      src="./img/ash-edmonds-MxzL5NvpaP0-unsplash.jpg"
+      alt="background image"
+      class="backgroundImg hide"
+    />
+    <div class="mainBackdrop">
+      <button class="skipBtn hide">Skip >>></button>
+      <img
+        class="backdropLogo blinking"
+        src="./img/logo_lightOff.png"
+        alt="logo"
+      />
+    </div>
+
     <header>
       <nav>
-        <div class="logo">
+        <div class="logoContainer">
           <a href="index.html"
-            ><img id="logo" src="./img/logo.png" alt="logo"
+            ><img class="logo hidden" src="./img/logo.png" alt="logo"
           /></a>
         </div>
         <div class="menu">
@@ -30,42 +44,41 @@
               <a class="index_home" href="index.html" role="menuitem">Home</a>
             </li>
             <li role="presentation">
-              <a class="index_about" href="HyungseokChoi.html" role="menuitem"
-                >About</a
-              >
+              <a class="index_about" href="about.html" role="menuitem">About</a>
             </li>
             <li role="presentation">
-              <a class="index_contact" href="contactMe.html" role="menuitem"
-                >Contact</a
+              <a class="index_projects" href="projects.html" role="menuitem"
+                >Projects</a
               >
-            </li>
-            <li role="presentation">
-              <a class="index_work" href="work.html" role="menuitem">Work</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="profile_contents">
-      <img
-        class="profile_portrait"
-        src="./img/profile.jpg"
-        alt="A photograph of me"
-      />
-      <h1>Hello World!</h1>
-      <button class="hello_world">Hello World</button>
-      <p class="index_intro">
-        My name is Hyungseok Choi from California, USA.
-        <a href="#">Click here</a> to check out my works!
-      </p>
+
+    <div class="index_introWrap">
+      <p class="index_intro intro1 hide">Isaac Choi</p>
+      <br />
+      <p class="index_intro intro2 hide">Web Developer</p>
     </div>
-    <footer>
+    <footer class="footer hide">
       <p>Find me on</p>
       <a target="_blank" href="https://github.com/GCnomore"
         ><img class="icons" src="img/github_icon.svg" alt="github"
       /></a>
-      <img class="icons" src="img/twitter_icon.svg" alt="twitter" />
-      <img class="icons" src="img/linkedin_icon.svg" alt="linkedin" />
+      <a href="https://twitter.com/IsaacCh99785355" target="_blank">
+        <img class="icons" src="img/twitter_icon.svg" alt="twitter" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/isaac-choi-6a68bb1b4/"
+      >
+        <img class="icons" src="img/linkedin_icon.svg" alt="linkedin" />
+      </a>
+      <a href="mailto:isaagc08@gmail.com" target="_blank">
+        <img src="img/gmail.png" alt="gmail" class="icons gmail" />
+      </a>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
