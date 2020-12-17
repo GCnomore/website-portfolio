@@ -7,7 +7,6 @@ body {
 }
 
 a {
-  text-decoration: underline;
   color: inherit;
 }
 
@@ -18,18 +17,6 @@ header {
 li {
   list-style-type: none;
 }
-
-/* nav {
-  height: 4.5rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  background-color: #161616a9;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  user-select: none;
-} */
 
 nav {
   height: 4.5rem;
@@ -177,6 +164,10 @@ p {
   padding: 0 2.5rem;
   display: flex;
   justify-content: center;
+}
+
+.description > p > a {
+  text-decoration: underline;
 }
 
 .col {
