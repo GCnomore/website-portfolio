@@ -4,6 +4,7 @@ body {
   font-family: 'Dosis', sans-serif;
   background-color: #121212;
   user-select: none;
+  color: white;
 }
 
 button {
@@ -28,6 +29,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  background-color: inherit;
 }
 
 p {
@@ -91,7 +93,8 @@ footer {
 footer > p {
   padding: 5% 0 0 0;
   font-weight: 600;
-  color: white;
+  color: inherit;
+  background-color: inherit;
 }
 
 .icons {
@@ -154,10 +157,11 @@ footer > p {
 
 .index_intro {
   font-size: 10rem;
-  color: white;
+  color: inherit;
   font-weight: 600;
   text-align: center;
   font-family: 'Anton', sans-serif;
+  background-color: inherit;
 }
 
 .index_introWrap {
@@ -284,4 +288,10 @@ footer > p {
 
 .fadeIn {
   animation: fadeIn 3s;
+}
+
+.lightsOn {
+  color: white;
+  transition: ease-out 2s;
+  background-color: #121212;
 }

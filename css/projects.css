@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: 'Dosis', sans-serif;
   background-color: #121212;
+  color: white;
 }
 
 a {
@@ -97,7 +98,7 @@ footer {
 footer > p {
   padding: 5% 0 0 0;
   font-weight: 600;
-  color: white;
+  color: inherit;
 }
 
 .icons {
@@ -119,7 +120,7 @@ footer > p {
 /* -----  ----- */
 .pageTitle {
   text-align: center;
-  color: white;
+  color: inherit;
 }
 
 .slidesWrap {
@@ -155,7 +156,7 @@ footer > p {
 }
 
 .description {
-  color: white;
+  color: inherit;
   padding: 0 2.5rem;
   display: flex;
   justify-content: center;
@@ -210,7 +211,7 @@ footer > p {
   border: none;
   outline: none;
   background-color: transparent;
-  color: white;
+  color: inherit;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -223,4 +224,10 @@ footer > p {
 .projects_iconsWrap > div:hover {
   transform: scale(1.2);
   transition-duration: 0.5s;
+}
+
+.lightsOn {
+  background-color: ivory;
+  color: black;
+  transition: ease-out 2s;
 }

@@ -89,3 +89,13 @@ mongodb.addEventListener('click', () => sortBy(mongodb));
 vue.addEventListener('click', () => sortBy(vue));
 angular.addEventListener('click', () => sortBy(angular));
 clearBtn.addEventListener('click', clearSort);
+
+// Logo clicking effect
+const logo = document.querySelector('.logo');
+const body = document.querySelector('body');
+
+const lightsOn = () => {
+  body.classList.toggle('lightsOn');
+};
+
+logo.addEventListener('click', lightsOn);
