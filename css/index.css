@@ -25,11 +25,39 @@ li {
 }
 
 nav {
-  padding: 1% 1.5% 0 1.5%;
+  padding: 0.2%;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   background-color: inherit;
+}
+
+.icons {
+  height: 25px;
+  padding: 0 0.25rem 0 0.25rem;
+  transform: rotateZ(-360deg);
+  transition-duration: 0.5s;
+}
+
+.gmail {
+  width: 1.8rem;
+}
+
+.icons:hover {
+  transform: rotateZ(360deg);
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.findMeWrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.findMeWrap > p {
+  padding-right: 1rem;
 }
 
 p {
@@ -54,6 +82,7 @@ p {
 
 .logo {
   width: 3rem;
+  padding-left: 1rem;
 }
 
 .menu {
@@ -65,7 +94,7 @@ p {
 
 .menu > ul {
   display: flex;
-  margin: 0;
+  margin-right: 1rem;
 }
 
 .menu > ul > li {
@@ -85,32 +114,19 @@ p {
 }
 
 footer {
+  margin-top: 10rem;
   padding: 0 0 5% 0;
   text-align: center;
   height: 100%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
 }
 
 footer > p {
   padding: 5% 0 0 0;
   font-weight: 600;
   color: inherit;
-  background-color: inherit;
-}
-
-.icons {
-  height: 42px;
-  transform: rotateZ(-360deg);
-  transition-duration: 0.5s;
-}
-
-.icons:hover {
-  transform: rotateZ(360deg);
-  transition-duration: 1.5s;
-  cursor: pointer;
-}
-
-.gmail {
-  width: 2.8rem;
 }
 
 /* -----  ----- */
@@ -294,4 +310,50 @@ footer > p {
   color: white;
   transition: ease-out 2s;
   background-color: #121212;
+}
+
+@media screen and (max-width: 768px) {
+  .index_introWrap {
+    height: 100%;
+    align-items: center;
+    padding-top: 20%;
+  }
+  .index_introWrap > * {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .index_introWrap > * {
+    font-size: 70px;
+  }
+  .menu {
+    font-size: 12px;
+    width: fit-content;
+    padding: 0;
+  }
+  .menu > ul {
+    padding-left: 0;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .findMeWrap {
+    font-size: 12px;
+    padding-left: 1.5rem;
+    align-self: center;
+  }
+  .findMeWrap > p {
+    display: none;
+  }
+  .logo {
+    width: 2.5rem;
+  }
+  .icons {
+    width: 1.5rem;
+    height: auto;
+  }
+  .gmail {
+    width: 1.5rem;
+  }
 }

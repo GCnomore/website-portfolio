@@ -19,15 +19,41 @@ li {
 }
 
 nav {
-  height: 4rem;
+  padding: 0.2%;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  user-select: none;
   background-color: #161616a9;
-  margin-bottom: 2rem;
-  position: sticky;
-  top: 0;
+  user-select: none;
+}
+
+.icons {
+  height: 25px;
+  padding: 0 0.25rem 0 0.25rem;
+  transform: rotateZ(-360deg);
+  transition-duration: 0.5s;
+}
+
+.gmail {
+  width: 1.8rem;
+  box-sizing: unset;
+}
+
+.icons:hover {
+  transform: rotateZ(360deg);
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.findMeWrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.findMeWrap > p {
+  padding-right: 1rem;
 }
 
 p {
@@ -86,35 +112,6 @@ p {
   text-decoration: underline;
 }
 
-footer {
-  padding: 0 0 5% 0;
-  text-align: center;
-  height: 100%;
-  user-select: none;
-}
-
-footer > p {
-  padding: 5% 0 0 0;
-  font-weight: 600;
-  color: inherit;
-}
-
-.icons {
-  height: 42px;
-  transform: rotateZ(-360deg);
-  transition-duration: 0.5s;
-}
-
-.icons:hover {
-  transform: rotateZ(360deg);
-  transition-duration: 1.5s;
-  cursor: pointer;
-}
-
-.gmail {
-  width: 2.8rem;
-}
-
 /* -----  ----- */
 
 .about_about {
@@ -123,6 +120,7 @@ footer > p {
 }
 
 .about_contents {
+  padding-top: 5%;
   display: flex;
   justify-content: center;
 }
@@ -169,43 +167,71 @@ footer > p {
   transition: 0.3s;
 }
 
-@keyframes flipInY {
-  from {
-    transform: perspective(400px) rotate3d(0, 1, 0, 0deg);
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    animation-timing-function: ease-in;
-  }
-
-  42% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-    animation-timing-function: ease-in;
-  }
-
-  42% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -180deg);
-  }
-
-  90% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-  }
-
-  to {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-  }
-}
-
-.flipInY {
-  backface-visibility: visible !important;
-  animation: flipInY 10s infinite;
-}
-
 .lightsOn {
   background-color: ivory;
   color: black;
   transition: ease-out 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .profile_portrait {
+    width: 15rem;
+    height: 15rem;
+    align-self: center;
+  }
+  .about_contents {
+    font-size: 15px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .skill > img {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .profile_portrait {
+    width: 12rem;
+    height: 12rem;
+    align-self: center;
+  }
+  .about_contents {
+    flex-direction: column;
+    font-size: 12px;
+    margin: 0;
+    padding: 1rem;
+  }
+  .about_me {
+    padding: 0;
+    text-align: center;
+  }
+  .menu {
+    font-size: 12px;
+    width: fit-content;
+    padding: 0;
+  }
+  .menu > ul {
+    padding-left: 0;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .findMeWrap {
+    font-size: 12px;
+    padding-left: 1.5rem;
+    align-self: center;
+  }
+  .findMeWrap > p {
+    display: none;
+  }
+  .logo {
+    width: 2.5rem;
+  }
+  .icons {
+    width: 2rem;
+    height: auto;
+  }
+  .gmail {
+    width: 1.5rem;
+  }
 }

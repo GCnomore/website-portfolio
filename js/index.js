@@ -4,7 +4,7 @@ const logo = document.querySelector('.logo');
 const backgroundImg = document.querySelector('.backgroundImg');
 const index_intro1 = document.querySelector('.intro1');
 const index_intro2 = document.querySelector('.intro2');
-const footer = document.querySelector('.footer');
+const findMeWrap = document.querySelector('.findMeWrap');
 const skipBtn = document.querySelector('.skipBtn');
 
 const visit = localStorage.getItem('isaacchoiportfolio');
@@ -16,7 +16,7 @@ const showLoading = (skip) => {
     mainBackdrop.classList.add('hide');
     index_intro1.classList.remove('hide', 'fadeIn');
     index_intro2.classList.remove('hide', 'fadeIn');
-    footer.classList.remove('hide', 'fadeIn');
+    findMeWrap.classList.remove('hidden', 'fadeIn');
     return;
   } else {
     setTimeout(() => {
@@ -45,8 +45,8 @@ const showLoading = (skip) => {
       index_intro2.classList.add('fadeIn');
     }, 10000);
     setTimeout(() => {
-      footer.classList.remove('hide');
-      footer.classList.add('fadeIn');
+      findMeWrap.classList.remove('hidden');
+      findMeWrap.classList.add('fadeIn');
       localStorage.setItem('isaacchoiportfolio', '1');
     }, 11000);
     visit && skipBtn.classList.remove('hide');

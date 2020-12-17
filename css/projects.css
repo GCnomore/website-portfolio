@@ -19,7 +19,7 @@ li {
   list-style-type: none;
 }
 
-nav {
+/* nav {
   height: 4.5rem;
   display: flex;
   width: 100%;
@@ -29,6 +29,48 @@ nav {
   top: 0;
   z-index: 100;
   user-select: none;
+} */
+
+nav {
+  height: 4.5rem;
+  padding: 0.2%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #161616a9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  user-select: none;
+}
+
+.icons {
+  height: 25px;
+  padding: 0 0.25rem 0 0.25rem;
+  transform: rotateZ(-360deg);
+  transition-duration: 0.5s;
+}
+
+.gmail {
+  width: 1.8rem;
+  box-sizing: unset;
+}
+
+.icons:hover {
+  transform: rotateZ(360deg);
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.findMeWrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.findMeWrap > p {
+  padding-right: 1rem;
 }
 
 p {
@@ -71,6 +113,7 @@ p {
 
 .menu > ul {
   display: flex;
+  margin-right: 1rem;
 }
 
 .menu > ul > li {
@@ -86,35 +129,6 @@ p {
   transform: scale(1.3, 1.3);
   transition-duration: 0.15s;
   text-decoration: underline;
-}
-
-footer {
-  padding: 0 0 5% 0;
-  text-align: center;
-  height: 100%;
-  user-select: none;
-}
-
-footer > p {
-  padding: 5% 0 0 0;
-  font-weight: 600;
-  color: inherit;
-}
-
-.icons {
-  height: 42px;
-  transform: rotateZ(-360deg);
-  transition-duration: 0.5s;
-}
-
-.icons:hover {
-  transform: rotateZ(360deg);
-  transition-duration: 1.5s;
-  cursor: pointer;
-}
-
-.gmail {
-  width: 2.8rem;
 }
 
 /* -----  ----- */
@@ -259,6 +273,35 @@ footer > p {
   }
   .kokoatalkSlideCont {
     width: 20rem;
+  }
+  .menu {
+    font-size: 12px;
+    width: fit-content;
+    height: 100%;
+  }
+  .menu > ul {
+    padding-left: 0;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .findMeWrap {
+    font-size: 12px;
+    padding-left: 1.5rem;
+    align-self: center;
+  }
+  .findMeWrap > p {
+    display: none;
+  }
+  .logo {
+    width: 2.5rem;
+  }
+  .icons {
+    width: 2rem;
+    height: auto;
+  }
+  .gmail {
+    width: 1.2rem;
   }
 }
 
