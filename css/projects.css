@@ -231,3 +231,38 @@ footer > p {
   color: black;
   transition: ease-out 2s;
 }
+
+@media screen and (max-width: 768px) {
+  .projects_iconsWrap > div {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slidesWrap {
+    width: 25rem;
+    height: 100%;
+  }
+  .carousel-item {
+    height: 15rem;
+  }
+  .projects_iconsWrap > div {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slidesWrap {
+    width: 15rem;
+    height: 100%;
+  }
+  .carousel-item {
+    height: 8rem;
+  }
+  .projects_iconsWrap > div {
+    width: 3rem;
+    height: 3rem;
+  }
+}
