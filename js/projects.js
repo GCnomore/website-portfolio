@@ -29,7 +29,7 @@ setInterval(() => {
   slide(todo);
   slide(watspoppin);
   slide(kokoatalk);
-}, 4000);
+}, 3000);
 
 // Sort by
 const icons = document.querySelector('.projects_iconsWrap');
