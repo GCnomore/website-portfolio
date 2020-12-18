@@ -1,7 +1,7 @@
 // Porjects slider
 const pokedex = ['pokeSlideCont', 'pokedexSlide'];
 const movieHunt = ['movieSlideCont', 'moviehuntSlide'];
-const thisQuiz = ['quizSlideCont', 'quizSlide'];
+// const thisQuiz = ['quizSlideCont', 'quizSlide'];
 const todo = ['todoSlideCont', 'todoSlide'];
 const watspoppin = ['watspoppinSlideCont', 'watspoppinSlide'];
 const kokoatalk = ['kokoatalkSlideCont', 'kokoatalkSlide'];
@@ -25,7 +25,7 @@ const slide = (project) => {
 setInterval(() => {
   slide(pokedex);
   slide(movieHunt);
-  slide(thisQuiz);
+  // slide(thisQuiz);
   slide(todo);
   slide(watspoppin);
   slide(kokoatalk);
@@ -87,7 +87,7 @@ react.addEventListener('click', () => sortBy(react));
 nodejs.addEventListener('click', () => sortBy(nodejs));
 mongodb.addEventListener('click', () => sortBy(mongodb));
 vue.addEventListener('click', () => sortBy(vue));
-angular.addEventListener('click', () => sortBy(angular));
+// angular.addEventListener('click', () => sortBy(angular));
 clearBtn.addEventListener('click', clearSort);
 
 // Logo clicking effect
