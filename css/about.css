@@ -67,7 +67,7 @@ p {
 .backgroundImg {
   height: 100%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: -1;
   opacity: 0.5;
   user-select: none;
@@ -173,6 +173,21 @@ p {
   transition: ease-out 1s;
 }
 
+@media screen and (max-width: 1024px) {
+  .mySkills > h1 {
+    font-size: 30px;
+  }
+  .hasExperience > h1 {
+    font-size: 30px;
+  }
+  .skillList {
+    margin: 0;
+    padding: 0 0 1.5rem 0;
+  }
+  .skill {
+    margin: 0.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .profile_portrait {
     width: 15rem;
@@ -186,6 +201,19 @@ p {
   }
   .skill > img {
     width: 3rem;
+  }
+  .mySkills > h1 {
+    font-size: 25px;
+  }
+  .hasExperience > h1 {
+    font-size: 25px;
+  }
+  .skillList {
+    margin: 0;
+    padding: 0 0 1.5rem 0;
+  }
+  .skill {
+    margin: 0.5rem;
   }
 }
 
@@ -233,5 +261,18 @@ p {
   }
   .gmail {
     width: 1.5rem;
+  }
+  .mySkills > h1 {
+    font-size: 25px;
+  }
+  .hasExperience > h1 {
+    font-size: 25px;
+  }
+  .skillList {
+    margin: 0;
+    padding: 0 0 1.5rem 0;
+  }
+  .skill {
+    margin: 0.5rem;
   }
 }
