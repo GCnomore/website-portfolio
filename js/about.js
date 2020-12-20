@@ -10,5 +10,10 @@ logo.addEventListener('click', lightsOn);
 
 // Drop down menu - find me
 const findMe = document.querySelector('.findMeWrapSm');
+const findIcons = document.querySelector('.findIconContSm');
 
-findMe.addEventListener('clic');
+const showDropDown = () => {
+  findIcons.classList.toggle('hide');
+};
+
+findMe.addEventListener('click', showDropDown);

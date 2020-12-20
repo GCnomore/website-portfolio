@@ -61,3 +61,13 @@ window.onload = () => {
 skipBtn.addEventListener('click', () => {
   showLoading('skip');
 });
+
+// Drop down menu - find me
+const findMe = document.querySelector('.findMeWrapSm');
+const findIcons = document.querySelector('.findIconContSm');
+
+const showDropDown = () => {
+  findIcons.classList.toggle('hide');
+};
+
+findMe.addEventListener('click', showDropDown);

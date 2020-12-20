@@ -28,7 +28,7 @@ nav {
   padding: 0.2%;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: inherit;
 }
 
@@ -58,6 +58,20 @@ nav {
 
 .findMeWrap > p {
   padding-right: 1rem;
+}
+
+.findMeWrapSm {
+  display: none;
+  user-select: none;
+  width: fit-content;
+}
+.findIconContSm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  position: absolute;
+  top: 3rem;
+  user-select: none;
 }
 
 p {
@@ -94,7 +108,7 @@ p {
 
 .menu > ul {
   display: flex;
-  margin-right: 1rem;
+  margin: 0 1rem 0 0;
 }
 
 .menu > ul > li {
@@ -313,6 +327,18 @@ footer > p {
 }
 
 @media screen and (max-width: 768px) {
+  .findMeWrap {
+    display: none;
+  }
+  .findMeWrapSm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 3rem;
+    align-self: center;
+    user-select: none;
+    cursor: pointer;
+  }
   .index_introWrap {
     height: 100%;
     align-items: center;
@@ -324,6 +350,13 @@ footer > p {
 }
 
 @media screen and (max-width: 570px) {
+  .findMeWrapSm {
+    margin-left: -20%;
+    font-size: 12px;
+  }
+  .findIconContSm {
+    margin-left: 3rem;
+  }
   .index_introWrap > * {
     font-size: 70px;
   }
@@ -338,14 +371,6 @@ footer > p {
     height: 100%;
     margin-bottom: 0;
   }
-  .findMeWrap {
-    font-size: 12px;
-    padding-left: 1.5rem;
-    align-self: center;
-  }
-  .findMeWrap > p {
-    display: none;
-  }
   .logo {
     width: 2.5rem;
   }
@@ -355,5 +380,11 @@ footer > p {
   }
   .gmail {
     width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .findMeWrapSm {
+    margin-left: 0;
   }
 }

@@ -59,6 +59,17 @@ nav {
   padding-right: 1rem;
 }
 
+.findMeWrapSm {
+  display: none;
+}
+.findIconContSm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  position: absolute;
+  top: 2.5rem;
+}
+
 p {
   margin: 0;
 }
@@ -127,6 +138,10 @@ p {
   margin: auto;
   height: 100%;
   user-select: none;
+}
+
+.projectsContainer > div {
+  padding: 3rem;
 }
 
 .projects_projects {
@@ -238,13 +253,41 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .findMeWrap {
+    display: none;
+  }
+  .findMeWrapSm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3rem;
+    align-self: center;
+    user-select: none;
+    cursor: pointer;
+  }
   .projects_iconsWrap > div {
     width: 4.5rem;
     height: 4.5rem;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 570px) {
+  .findMeWrapSm {
+    margin-left: 2rem;
+  }
+  .findIconContSm {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .findMeWrapSm {
+    margin-left: 1rem;
+    font-size: 12px;
+  }
+  .findIconContSm {
+    margin-left: 2rem;
+  }
   .slidesWrap {
     width: 25rem;
     height: 100%;
@@ -307,8 +350,11 @@ p {
 
 @media screen and (max-width: 375px) {
   .slidesWrap {
-    width: 15rem;
+    width: 80vw;
     height: 100%;
+  }
+  .slidesWrap > div {
+    height: 20vh;
   }
   .carousel-item {
     height: 8rem;

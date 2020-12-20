@@ -46,7 +46,7 @@ nav {
 }
 
 .findMeWrap {
-  display: none;
+  display: flex;
   width: 100%;
   align-items: center;
   padding-left: 2rem;
@@ -57,18 +57,14 @@ nav {
 }
 
 .findMeWrapSm {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-left: 3rem;
-  align-self: center;
-  user-select: none;
-  cursor: pointer;
+  display: none;
 }
 .findIconContSm {
   display: flex;
   flex-direction: column;
-  padding-left: 3rem;
+  margin-left: 3rem;
+  position: absolute;
+  top: 2.5rem;
 }
 
 p {
@@ -80,7 +76,7 @@ p {
 }
 
 .bg {
-  background-image: url('../img/andre-benz-wkhyXI5hRbo-unsplash.jpg');
+  background-image: url('../img/andre-benz-wkhyXI5hRbo-unsplash.webp');
   width: 100%;
   height: 120vh;
   background-repeat: no-repeat;
@@ -219,6 +215,18 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .findMeWrap {
+    display: none;
+  }
+  .findMeWrapSm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3rem;
+    align-self: center;
+    user-select: none;
+    cursor: pointer;
+  }
   .profile_portrait {
     width: 15rem;
     height: 15rem;
@@ -248,6 +256,12 @@ p {
 }
 
 @media screen and (max-width: 570px) {
+  .findMeWrapSm {
+    margin-left: 2rem;
+  }
+  .findIconContSm {
+    margin-left: 3rem;
+  }
   .profile_portrait {
     width: 12rem;
     height: 12rem;
@@ -276,14 +290,6 @@ p {
   }
   .menu > ul > li {
     padding: 0 0.5rem 0 0.5rem;
-  }
-  .findMeWrap {
-    font-size: 12px;
-    padding-left: 1.5rem;
-    align-self: center;
-  }
-  .findMeWrap > p {
-    display: none;
   }
   .logo {
     width: 2.5rem;
@@ -341,5 +347,12 @@ p {
   }
   .menu > ul > li {
     padding: 0 0.3rem 0 0.3rem;
+  }
+  .findMeWrapSm {
+    margin-left: 1rem;
+    font-size: 12px;
+  }
+  .findIconContSm {
+    margin-left: 2rem;
   }
 }
