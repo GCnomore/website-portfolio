@@ -10,6 +10,12 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="./css/about.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
@@ -22,11 +28,7 @@
     <title>About</title>
   </head>
   <body>
-    <img
-      src="./img/andre-benz-wkhyXI5hRbo-unsplash.jpg"
-      alt="background image"
-      class="backgroundImg"
-    />
+    <div class="bg"></div>
     <div class="bodywrap">
       <nav>
         <div class="logoContainer">
@@ -50,6 +52,30 @@
             <img src="img/gmail.png" alt="gmail" class="icons gmail" />
           </a>
         </div>
+
+        <div class="findMeWrapSm">
+          <p>
+            <strong>Isaac Choi <i class="fas fa-sort-down"></i></strong>
+          </p>
+          <div class="findIconContSm hide">
+            <a target="_blank" href="https://github.com/GCnomore"
+              ><img class="icons" src="img/github1.jpg" alt="github"
+            /></a>
+            <a href="https://twitter.com/IsaacCh99785355" target="_blank">
+              <img class="icons" src="img/twitter_icon.svg" alt="twitter" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/isaac-choi-6a68bb1b4/"
+            >
+              <img class="icons" src="img/linkedin_icon.svg" alt="linkedin" />
+            </a>
+            <a href="mailto:isaagc08@gmail.com" target="_blank">
+              <img src="img/gmail.png" alt="gmail" class="icons gmail" />
+            </a>
+          </div>
+        </div>
+
         <div class="menu">
           <ul role="menubar">
             <li role="presentation">
@@ -66,7 +92,7 @@
           </ul>
         </div>
       </nav>
-      <div class="about_contents container-md">
+      <div class="about_contents container-fluid">
         <img
           class="profile_portrait"
           src="./img/profile_cut.jpg"
@@ -84,7 +110,7 @@
         </p>
       </div>
 
-      <div class="skillContainer container-md">
+      <div class="skillContainer container-fluid">
         <div class="mySkills">
           <h1>Skills</h1>
           <ul class="skillList row">

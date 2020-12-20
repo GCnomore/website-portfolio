@@ -7,3 +7,8 @@ const lightsOn = () => {
 };
 
 logo.addEventListener('click', lightsOn);
+
+// Drop down menu - find me
+const findMe = document.querySelector('.findMeWrapSm');
+
+findMe.addEventListener('clic');

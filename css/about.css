@@ -22,7 +22,7 @@ nav {
   padding: 0.2%;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #161616a9;
   user-select: none;
 }
@@ -46,7 +46,7 @@ nav {
 }
 
 .findMeWrap {
-  display: flex;
+  display: none;
   width: 100%;
   align-items: center;
   padding-left: 2rem;
@@ -54,6 +54,21 @@ nav {
 
 .findMeWrap > p {
   padding-right: 1rem;
+}
+
+.findMeWrapSm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3rem;
+  align-self: center;
+  user-select: none;
+  cursor: pointer;
+}
+.findIconContSm {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
 }
 
 p {
@@ -64,11 +79,15 @@ p {
   display: none;
 }
 
-.backgroundImg {
-  height: 100%;
+.bg {
+  background-image: url('../img/andre-benz-wkhyXI5hRbo-unsplash.jpg');
   width: 100%;
-  position: absolute;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   z-index: -1;
+  position: absolute;
   opacity: 0.5;
   user-select: none;
 }
@@ -86,7 +105,6 @@ p {
 
 .menu {
   display: flex;
-  width: 100%;
   flex-direction: row-reverse;
   align-items: center;
   padding-right: 1rem;
@@ -120,7 +138,7 @@ p {
 }
 
 .about_contents {
-  padding-top: 5%;
+  padding: 2rem 6rem 2rem 6rem;
   display: flex;
   justify-content: center;
 }
@@ -188,6 +206,18 @@ p {
     margin: 0.5rem;
   }
 }
+
+@media screen and (max-width: 940px) {
+  .about_contents {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+  .profile_portrait {
+    width: 20rem;
+    height: 20rem;
+    align-self: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .profile_portrait {
     width: 15rem;
@@ -243,6 +273,9 @@ p {
     align-items: center;
     height: 100%;
     margin-bottom: 0;
+  }
+  .menu > ul > li {
+    padding: 0 0.5rem 0 0.5rem;
   }
   .findMeWrap {
     font-size: 12px;
@@ -305,5 +338,8 @@ p {
   }
   .hasExperience > ul {
     padding: 0;
+  }
+  .menu > ul > li {
+    padding: 0 0.3rem 0 0.3rem;
   }
 }
