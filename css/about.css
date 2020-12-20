@@ -276,3 +276,27 @@ p {
     margin: 0.5rem;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .skillContainer {
+    padding: 0;
+  }
+  .mySkills {
+    font-size: 12px;
+  }
+  .mySkills > h1 {
+    font-size: 20px;
+  }
+  .skill > img {
+    width: 2.5rem;
+  }
+  .hasExperience {
+    font-size: 12px;
+  }
+  .hasExperience > h1 {
+    font-size: 20px;
+  }
+  .hasExperience > ul {
+    padding: 0;
+  }
+}
