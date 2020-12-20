@@ -287,11 +287,14 @@ p {
   .mySkills > h1 {
     font-size: 20px;
   }
+  .mySkills > ul {
+    padding: 0 0 0.5rem 0;
+  }
   .skill > img {
-    width: 2.5rem;
+    width: 2rem;
   }
   .hasExperience {
-    font-size: 12px;
+    font-size: 10px;
   }
   .hasExperience > h1 {
     font-size: 20px;
