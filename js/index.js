@@ -63,11 +63,11 @@ skipBtn.addEventListener('click', () => {
 });
 
 // Drop down menu - find me
-const findMe = document.querySelector('.findMeWrapSm');
+const isaac = document.querySelector('.isaac');
 const findIcons = document.querySelector('.findIconContSm');
 
 const showDropDown = () => {
   findIcons.classList.toggle('hide');
 };
 
-findMe.addEventListener('click', showDropDown);
+isaac.addEventListener('click', showDropDown);

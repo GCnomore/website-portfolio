@@ -67,6 +67,11 @@ nav {
   top: 2.5rem;
 }
 
+.isaac {
+  width: fit-content;
+  cursor: pointer;
+}
+
 p {
   margin: 0;
 }
@@ -225,7 +230,6 @@ p {
     margin-left: 3rem;
     align-self: center;
     user-select: none;
-    cursor: pointer;
   }
   .profile_portrait {
     width: 15rem;
