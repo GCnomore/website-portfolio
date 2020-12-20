@@ -19,8 +19,7 @@ li {
 }
 
 nav {
-  height: 4.5rem;
-  padding: 0.2%;
+  height: 3rem;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -87,10 +86,6 @@ p {
   padding-left: 1rem;
 }
 
-.menubar {
-  margin: 0 1rem 0 0;
-}
-
 .menu {
   display: flex;
   width: 100%;
@@ -100,7 +95,8 @@ p {
 
 .menu > ul {
   display: flex;
-  margin-right: 1rem;
+  margin: 0 1rem 0 0;
+  padding: 0;
 }
 
 .menu > ul > li {
@@ -122,6 +118,7 @@ p {
 .pageTitle {
   text-align: center;
   color: inherit;
+  margin-top: 2.5rem;
 }
 
 .slidesWrap {
@@ -255,9 +252,16 @@ p {
   .carousel-item {
     height: 15rem;
   }
+  .projects_iconsWrap {
+    padding-top: 1rem;
+  }
   .projects_iconsWrap > div {
-    width: 4rem;
-    height: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-top: 1rem;
+  }
+  .clearBtn {
+    margin: 0.5rem 0 0 0;
   }
   .kokoatalkSlide {
     height: 35rem;
@@ -269,12 +273,14 @@ p {
     font-size: 12px;
     width: fit-content;
     height: 100%;
+    margin: 0;
+    align-content: center;
   }
   .menu > ul {
     padding-left: 0;
     align-items: center;
     height: 100%;
-    margin-bottom: 0;
+    margin: 0;
   }
   .findMeWrap {
     font-size: 12px;
@@ -293,6 +299,9 @@ p {
   }
   .gmail {
     width: 1.2rem;
+  }
+  .projectsContainer > div {
+    padding: 3rem 0 5rem 0;
   }
 }
 
