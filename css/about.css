@@ -139,7 +139,7 @@ p {
 }
 
 .about_contents {
-  padding: 2rem 6rem 2rem 6rem;
+  padding: 2rem 18rem 2rem 18rem;
   display: flex;
   justify-content: center;
 }
@@ -190,6 +190,18 @@ p {
   background-color: ivory;
   color: black;
   transition: ease-out 1s;
+}
+
+@media screen and (max-width: 1420px) {
+  .about_contents {
+    padding: 2rem 12rem 2rem 12rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about_contents {
+    padding: 2rem 5rem 2rem 5rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
