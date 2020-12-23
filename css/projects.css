@@ -31,7 +31,7 @@ nav {
 }
 
 .icons {
-  height: 25px;
+  height: 1.57rem;
   padding: 0 0.25rem 0 0.25rem;
   transform: rotateZ(-360deg);
   transition-duration: 0.5s;
@@ -116,7 +116,7 @@ p {
 }
 
 .menu > ul > li {
-  padding: 0 10px;
+  padding: 0 0.5rem;
 }
 
 .menu > ul > li > a,
