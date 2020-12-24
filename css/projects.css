@@ -1,7 +1,7 @@
 /* -----Layout settings----- */
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   background-color: #121212;
   color: white;
 }
@@ -137,6 +137,11 @@ p {
   margin-top: 2.5rem;
 }
 
+.projects_sortBy {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+}
+
 .slidesWrap {
   width: 35rem;
   padding: 0 0 1rem 0;
@@ -199,7 +204,7 @@ p {
 }
 
 .projects_iconsWrap {
-  padding: 3rem 0 0 0;
+  padding: 0 0 0 0;
   display: flex;
   justify-content: center;
   user-select: none;
