@@ -257,7 +257,7 @@ p {
 }
 
 .lightsOn {
-  background-color: ivory;
+  background: #ffdee9 linear-gradient(45deg, #ffdee9 0%, #b5fffc 120%);
   color: black;
   transition: ease-out 2s;
 }
