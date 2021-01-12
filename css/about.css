@@ -150,6 +150,16 @@ p {
   user-select: none;
 }
 
+.profile_backdrop {
+  height: 120vh;
+  width: 100%;
+  top: 0;
+  user-select: none;
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+}
+
 .about_me {
   padding: 0 0 0 10%;
   line-height: 2.1;
@@ -187,7 +197,7 @@ p {
 }
 
 .lightsOn {
-  background-color: ivory;
+  background-color: rgb(177, 177, 177);
   color: black;
   transition: ease-out 1s;
 }
