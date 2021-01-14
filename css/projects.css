@@ -262,6 +262,11 @@ p {
   transition: ease-out 2s;
 }
 
+.lightsOnNav {
+  background-color: #3636363d;
+  transition: ease-out 2s;
+}
+
 @media screen and (max-width: 768px) {
   .findMeWrap {
     display: none;

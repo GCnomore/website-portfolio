@@ -1,0 +1,195 @@
+body {
+  margin: 10% 0 0 0;
+  background-color: #101820;
+  color: #f2aa4c;
+}
+
+.v2projects_iconsWrap {
+  position: absolute;
+  top: 43%;
+  left: 65%;
+  transform: perspective(1000px) rotateZ(15deg);
+  height: 500px;
+  width: 200px;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.v2innerWrap {
+  margin: 0 1rem 0 1rem;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 8s linear infinite;
+}
+
+.v2innerWrap div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.v2innerWrap div:nth-child(1) {
+  transform: rotateY(0deg);
+}
+.v2innerWrap div:nth-child(2) {
+  transform: rotateY(45deg);
+}
+.v2innerWrap div:nth-child(3) {
+  transform: rotateY(90deg);
+}
+.v2innerWrap div:nth-child(4) {
+  transform: rotateY(135deg);
+}
+.v2innerWrap div:nth-child(5) {
+  transform: rotateY(180deg);
+}
+.v2innerWrap div:nth-child(6) {
+  transform: rotateY(225deg);
+}
+.v2innerWrap div:nth-child(7) {
+  transform: rotateY(270deg);
+}
+.v2innerWrap div:nth-child(8) {
+  transform: rotateY(315deg);
+}
+
+.v2projects_icons {
+  width: 50%;
+  margin: 200px;
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(359deg);
+  }
+}
+
+.v2introSection {
+  text-align: center;
+}
+
+.v2intro {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  width: 100%;
+  font-family: "Anton", sans-serif;
+}
+
+.v2intro h1 {
+  font-size: 8rem;
+  line-height: 0.1;
+  text-align: right;
+  margin-right: 20%;
+}
+.v2lastname {
+  margin-right: 10% !important;
+}
+.v2underline {
+  border-bottom: 0.1rem solid #f2aa4c;
+  margin: -1% 5% 0 24%;
+}
+
+.v2shortIntro {
+  font-size: 1.4rem;
+  line-height: 0.3;
+  text-align: left;
+  width: 100%;
+  align-self: flex-end;
+  margin-bottom: 1.5%;
+  font-family: "Fraunces", serif;
+}
+
+.v2about {
+  width: 30%;
+  padding: 1% 0 8% 20%;
+  text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.v2title h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Anton", sans-serif;
+  margin: 8% 0 5% 0;
+}
+
+.v2projectsList {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 15% 0;
+}
+
+.test1 {
+  height: 70vh;
+  width: 50vw;
+  background-color: white;
+  transform: perspective(1000px) rotateY(-20deg);
+}
+
+.v2projectorWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.v2projectIconsWrap {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.v2proejctorCont {
+  margin-top: 50%;
+}
+
+.v2projector {
+  height: 20rem;
+  width: 10rem;
+  transform: rotateY(180deg);
+}
+
+.v2projectIcons {
+  width: 5rem;
+  height: auto;
+}
+
+.v2projectSelectWrap {
+  width: 10px;
+  width: 100%;
+}
+
+.v2projectSelect {
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.v2projectSelect > h2 {
+  cursor: pointer;
+}
+
+.v2screen {
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+}
