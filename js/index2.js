@@ -1,11 +1,29 @@
 const projectScreen = document.querySelector(".v2screen");
 const infoWrap = document.querySelector(".infoWrap");
 const projectSelect = document.querySelector(".v2projectSelect");
-const movieHunt = "https://moviehunt-gc.herokuapp.com/client/";
-const pokeDex = "https://gcnomore.github.io/pokedex/";
-const kokoaTalk = "https://github.com/GCnomore/chatApp";
-const toDo = "https://gcnomore.github.io/todoApp/";
-const watsPoppin = "https://gcnomore.github.io/watspoppin/";
+
+const projects = [
+  {
+    name: "movieHunt",
+    url: "https://moviehunt-gc.herokuapp.com/client/",
+  },
+  {
+    name: "pokeDex",
+    url: "https://gcnomore.github.io/pokedex/",
+  },
+  {
+    name: "kokoaTalk",
+    url: "https://github.com/GCnomore/chatApp",
+  },
+  {
+    name: "toDo",
+    url: "https://gcnomore.github.io/todoApp/",
+  },
+  {
+    name: "watsPoppin",
+    url: "https://gcnomore.github.io/watspoppin/",
+  },
+];
 
 window.document.addEventListener("click", (e) => {});
 
@@ -29,11 +47,24 @@ const showInfo = (children, item) => {
 };
 
 const showProject = (e) => {
-  const projectName = e.target.className;
-  projectName == "see_movieHunt" &&
-    projectScreen.setAttribute("src", movieHunt);
-  projectName == "see_pokeDex" && projectScreen.setAttribute("src", pokeDex);
-  projectName == "see_toDo" && projectScreen.setAttribute("src", toDo);
-  projectName == "see_watsPoppin" &&
-    projectScreen.setAttribute("src", watsPoppin);
+  const targetProject = e.target.className;
+  const match = projects.filter((item) => {
+    return targetProject === `see_${item.name}`;
+  });
+
+  if (targetProject.includes("see")) {
+    const iconWrap = document.querySelector(`.v2${match[0].name}IconsWrap`);
+    const iconChildren = Array.from(iconWrap.children);
+
+    iconChildren.forEach((item, index) => {
+      item.classList.remove("build");
+      projectScreen.removeAttribute("src");
+      setTimeout(() => {
+        item.classList.add("build");
+      }, 0 + index * 200);
+    });
+    setTimeout(() => {
+      projectScreen.setAttribute("src", match[0].url);
+    }, 2500);
+  }
 };
