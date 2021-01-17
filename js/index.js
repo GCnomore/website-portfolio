@@ -18,6 +18,10 @@ const showLoading = (skip) => {
     index_intro2.classList.remove("hide", "fadeIn");
     findMeWrap.classList.remove("hidden", "fadeIn");
     logo.classList.remove("blinkIn", "hidden");
+    setTimeout(() => {
+      logo.classList.remove("blinkIn", "hidden");
+    }, 8001);
+    logo.classList.add("bounce");
     return;
   } else {
     setTimeout(() => {
@@ -51,6 +55,9 @@ const showLoading = (skip) => {
       localStorage.setItem("isaacchoiportfolio", "1");
     }, 11000);
     visit && skipBtn.classList.remove("hide");
+    setTimeout(() => {
+      logo.classList.add("bounce");
+    }, 12000);
     return;
   }
 };

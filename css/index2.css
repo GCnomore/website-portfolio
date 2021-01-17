@@ -1,8 +1,10 @@
 body {
-  margin: 10% 0 0 0;
+  margin: 10rem 0 0 0;
   background-color: #161b21;
   color: #f2aa4c;
   box-sizing: border-box;
+  overflow-x: hidden;
+  transition: 5s;
 }
 
 a {
@@ -14,20 +16,135 @@ a {
   user-select: none;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+header {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding: 0.2%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.336);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.icons {
+  height: 1.57rem;
+  padding: 0 0.25rem 0 0.25rem;
+  transform: rotateZ(-360deg);
+  transition-duration: 0.5s;
+}
+
+.gmail {
+  width: 1.8rem;
+}
+
+.icons:hover {
+  transform: rotateZ(360deg);
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.findMeWrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.findMeWrap > p {
+  padding-right: 1rem;
+}
+
+.findMeWrapSm {
+  display: none;
+  user-select: none;
+  width: 100%;
+}
+.findIconContSm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  position: absolute;
+  top: 3rem;
+  user-select: none;
+}
+
+.isaac {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.logo {
+  width: 3rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+.menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.menu > ul {
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+
+.menu > ul > li {
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+.menu > ul > li > a,
+.menu > ul > li > a:visited {
+  color: grey;
+}
+
+.menu > ul > li:hover {
+  transform: scale(1.3, 1.3);
+  transition-duration: 0.15s;
+  text-decoration: underline;
+}
+
 .v2projects_iconsWrap {
   position: absolute;
   top: 48%;
   left: 63%;
   transform: rotateZ(8deg);
+  transform-style: preserve-3d;
   height: 10px;
   width: 180px;
-  transform-style: preserve-3d;
   user-select: none;
 }
 
 .v2innerWrap {
   margin: 0 1rem 0 1rem;
-  cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;
@@ -320,47 +437,38 @@ a {
   }
 }
 
-.sendEmail {
+.v2findme {
   display: flex;
   justify-content: center;
-}
-
-.emailForm {
-  display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 100%;
-  align-items: center;
-  margin-bottom: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-.emailForm input:nth-child(2) {
-  width: 40%;
-  height: 1.3rem;
-  margin: 0.5rem 0 2rem 0;
-}
-.emailForm input:nth-child(4) {
-  width: 40%;
-  height: 1.3rem;
-  margin: 0.5rem 0 2rem 0;
+.v2findme h2 {
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
+  margin: 0 0 2% 0;
+  text-shadow: -15px 12px 12px #000;
 }
 
-input {
-  outline: none;
-  font-size: 1rem;
-  border: 4px #f2aa4c solid;
-  background-color: #161b21;
-  color: #f2aa4c;
-  box-shadow: 11px 9px 15px 2px #000;
+.v2findMeIcons img {
+  width: 3rem;
+  margin: 0 0.1rem 0 0.1rem;
+  transform: rotateZ(-360deg);
+  transition-duration: 0.5s;
 }
 
-textarea {
-  resize: none;
-  outline: none;
-  font-size: 1.5rem;
-  margin: 0.5rem 0 2rem 0;
-  border: 4px #f2aa4c solid;
-  background-color: #161b21;
-  color: #f2aa4c;
-  box-shadow: 15px 20px 20px 5px #000;
+.v2findMeIcons img:hover {
+  transform: rotateZ(360deg);
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.v2findmeWrap {
+  padding-bottom: 5rem;
+}
+
+.gmail {
+  width: 2rem;
 }
