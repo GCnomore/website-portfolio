@@ -68,18 +68,3 @@ const showProject = (e) => {
     }, 2500);
   }
 };
-
-const sendBtn = document.querySelector(".v2sendBtn");
-const emailForm = document.querySelector(".emailForm");
-sendBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  emailForm.classList.add("sending");
-  setTimeout(() => {
-    emailForm.classList.add("put");
-  }, 2000);
-  setTimeout(() => {
-    emailForm.classList.remove("sending");
-    emailForm.classList.remove("put");
-    window.location.href = "mailto:isaacgc08@gmail.com";
-  }, 2500);
-});
