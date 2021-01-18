@@ -1,6 +1,7 @@
 const backdropLogo = document.querySelector(".backdropLogo");
 const mainBackdrop = document.querySelector(".mainBackdrop");
 const logo = document.querySelector(".logo");
+const logoWrap = document.querySelector(".logoWrap");
 const backgroundImg = document.querySelector(".backgroundImg");
 const index_intro1 = document.querySelector(".intro1");
 const index_intro2 = document.querySelector(".intro2");
@@ -79,3 +80,16 @@ const showDropDown = () => {
 };
 
 isaac.addEventListener("click", showDropDown);
+
+const modal = document.querySelector(".modalBackdrop");
+modal.addEventListener("click", () => {
+  modal.classList.add("hide");
+});
+logo.addEventListener("click", () => {
+  if (screen.availWidth > 1023) {
+    console.log("ok");
+    logoWrap.setAttribute("href", "./index2.html");
+  } else {
+    modal.classList.remove("hide");
+  }
+});

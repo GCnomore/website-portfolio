@@ -169,7 +169,7 @@ footer > p {
 
 /* -----Loading animation elements----- */
 .mainBackdrop {
-  z-index: 100;
+  z-index: 10;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -407,4 +407,33 @@ footer > p {
     margin-left: 1rem;
     font-size: 12px;
   }
+}
+
+.modalBackdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modalWrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: black;
+  width: 40rem;
+  height: 30rem;
+}
+
+.modal h1 {
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
