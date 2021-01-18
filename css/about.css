@@ -398,3 +398,14 @@ p {
     margin-left: 2rem;
   }
 }
+
+.tryMe {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.767);
+  color: black;
+  width: 4rem;
+  font-weight: 600;
+  text-align: center;
+  top: 6%;
+  left: 0.6%;
+}
