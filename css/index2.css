@@ -474,6 +474,25 @@ nav {
   width: 2rem;
 }
 
+@media screen and (min-width: 1440px) and (max-width: 1790px) {
+  .v2proejctorCont {
+    margin-left: -150%;
+  }
+
+  .v2projectSelectWrap {
+    left: 2%;
+  }
+
+  .v2projectSelect h2 {
+    font-size: 20px;
+  }
+
+  .infoWrap {
+    left: 9rem;
+    width: 25rem;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .v2proejctorCont {
     margin-left: -150%;
