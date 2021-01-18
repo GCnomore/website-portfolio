@@ -78,13 +78,15 @@ const findIcons = document.querySelector(".findIconContSm");
 const showDropDown = () => {
   findIcons.classList.toggle("hide");
 };
-
 isaac.addEventListener("click", showDropDown);
 
+// Restrict screen size smaller than 1024px to access version2 page
 const modal = document.querySelector(".modalBackdrop");
+
 modal.addEventListener("click", () => {
   modal.classList.add("hide");
 });
+
 logo.addEventListener("click", () => {
   if (screen.availWidth > 1023) {
     console.log("ok");

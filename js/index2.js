@@ -25,8 +25,7 @@ const projects = [
   },
 ];
 
-window.document.addEventListener("click", (e) => {});
-
+// Show project info when the title is clicked
 projectSelect.addEventListener("click", (e) => {
   const infoName = e.target.className.slice(10);
   const infoChildren = Array.from(infoWrap.children);
@@ -46,6 +45,7 @@ const showInfo = (children, item) => {
   item.classList.remove("hide");
 };
 
+// Show project on iframe screen when show app is clicked
 const showProject = (e) => {
   const targetProject = e.target.className;
   const match = projects.filter((item) => {
@@ -56,6 +56,7 @@ const showProject = (e) => {
     const iconWrap = document.querySelector(`.v2${match[0].name}IconsWrap`);
     const iconChildren = Array.from(iconWrap.children);
 
+    // Related icons animation
     iconChildren.forEach((item, index) => {
       item.classList.remove("build");
       projectScreen.removeAttribute("src");
