@@ -121,9 +121,9 @@ p {
 
 .menu {
   display: flex;
-  width: 100%;
   flex-direction: row-reverse;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .menu > ul {
@@ -309,6 +309,11 @@ p {
   .findIconContSm {
     margin-left: 3rem;
   }
+  .menu {
+    font-size: 12px;
+    width: fit-content;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -343,13 +348,7 @@ p {
   .kokoatalkSlideCont {
     width: 20rem;
   }
-  .menu {
-    font-size: 12px;
-    width: fit-content;
-    height: 100%;
-    margin: 0;
-    align-content: center;
-  }
+
   .menu > ul {
     padding-left: 0;
     align-items: center;

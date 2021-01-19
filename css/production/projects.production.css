@@ -178,7 +178,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -186,6 +185,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .menu > ul {
@@ -420,6 +420,13 @@ p {
   .findIconContSm {
     margin-left: 3rem;
   }
+  .menu {
+    font-size: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -454,16 +461,7 @@ p {
   .kokoatalkSlideCont {
     width: 20rem;
   }
-  .menu {
-    font-size: 12px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 100%;
-    margin: 0;
-    -ms-flex-line-pack: center;
-    align-content: center;
-  }
+
   .menu > ul {
     padding-left: 0;
     -webkit-box-align: center;
