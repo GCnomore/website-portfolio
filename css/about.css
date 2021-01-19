@@ -19,6 +19,8 @@ li {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   padding: 0.4% 0.2% 0.2% 0.2%;
   display: flex;
   width: 100%;
@@ -29,7 +31,7 @@ nav {
 
 .icons {
   height: 1.57rem;
-  padding: 0 0.25rem 0 0.25rem;
+  margin: 0 0.25rem 0 0.25rem;
   transform: rotateZ(-360deg);
   transition-duration: 0.5s;
 }
@@ -406,6 +408,6 @@ p {
   width: 4rem;
   font-weight: 600;
   text-align: center;
-  top: 6%;
+  top: 100%;
   left: 0.6%;
 }
