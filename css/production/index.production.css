@@ -1,0 +1,653 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* -----Layout settings----- */
+body {
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  background-color: #121212;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding: 0.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+.icons {
+  height: 1.57rem;
+  padding: 0 0.25rem 0 0.25rem;
+  -webkit-transform: rotateZ(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotateZ(-360deg);
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.gmail {
+  width: 1.8rem;
+}
+
+.icons:hover {
+  -webkit-transform: rotateZ(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotateZ(360deg);
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.findMeWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.findMeWrap > p {
+  padding-right: 1rem;
+}
+
+.findMeWrapSm {
+  display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+.findIconContSm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 3rem;
+  position: absolute;
+  top: 3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.isaac {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.backgroundImg {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.logo {
+  width: 3rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.bounce {
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1rem 0 0;
+}
+
+.menu > ul > li {
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+.menu > ul > li > a,
+.menu > ul > li > a:visited {
+  color: grey;
+}
+
+.menu > ul > li:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+  -webkit-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 0 0 5% 0;
+  text-align: center;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer > p {
+  padding: 5% 0 0 0;
+  font-weight: 600;
+  color: inherit;
+}
+
+/* -----  ----- */
+
+/* -----Loading animation elements----- */
+.mainBackdrop {
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+}
+
+.backdropLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.skipBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+/* -----  ----- */
+
+.index_home {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.index_intro {
+  font-size: 10rem;
+  color: inherit;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  background-color: inherit;
+}
+
+.index_introWrap {
+  padding-top: 5%;
+}
+
+/* -----Animation properties----- */
+
+.blinkIn {
+  -webkit-animation: blinkIn 1s;
+  animation: blinkIn 1s;
+}
+@-webkit-keyframes blinkIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+@keyframes blinkIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  -webkit-animation: blinking 5s;
+  animation: blinking 5s;
+}
+@-webkit-keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 0;
+  }
+  26.3% {
+    opacity: 1;
+  }
+  26.6% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  40.3% {
+    opacity: 1;
+  }
+  40.6% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 0;
+  }
+  26.3% {
+    opacity: 1;
+  }
+  26.6% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  40.3% {
+    opacity: 1;
+  }
+  40.6% {
+    opacity: 0;
+  }
+  41% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  68% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 3s;
+  animation: fadeOut 3s;
+}
+
+@-webkit-keyframes bgFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bgFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+.bgFadeIn {
+  -webkit-animation: bgFadeIn 5s;
+  animation: bgFadeIn 5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 3s;
+  animation: fadeIn 3s;
+}
+
+.lightsOn {
+  color: white;
+  -webkit-transition: ease-out 2s;
+  -o-transition: ease-out 2s;
+  transition: ease-out 2s;
+  background-color: #121212;
+}
+
+@media screen and (max-width: 768px) {
+  .findMeWrap {
+    display: none;
+  }
+  .findMeWrapSm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 3rem;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .index_introWrap {
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 20%;
+  }
+  .index_introWrap > * {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .findMeWrapSm {
+    margin-left: 2rem;
+  }
+  .findIconContSm {
+    margin-left: 3rem;
+  }
+  .index_introWrap > * {
+    font-size: 70px;
+  }
+  .menu {
+    font-size: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+  }
+  .menu > ul {
+    padding-left: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .logo {
+    width: 2.5rem;
+  }
+  .icons {
+    width: 1.5rem;
+    height: auto;
+  }
+  .gmail {
+    width: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .findMeWrapSm {
+    margin-left: 1rem;
+    font-size: 12px;
+  }
+}
+
+.modalBackdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modalWrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: black;
+  width: 40rem;
+  height: 30rem;
+}
+
+.modal h1 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+}
