@@ -1,7 +1,7 @@
 /* -----Layout settings----- */
 body {
   margin: 0;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   background-color: #121212;
   color: white;
 }
@@ -113,9 +113,9 @@ p {
 }
 
 .bg {
-  background-image: url("../../img/backgrounds/andre-benz-wkhyXI5hRbo-unsplash.webp");
   width: 100%;
-  height: 120vh;
+  height: 100vh;
+  background-image: url('../../img/backgrounds/andre-benz-wkhyXI5hRbo-unsplash.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -262,7 +262,7 @@ p {
 .about_me {
   padding: 0 0 0 10%;
   line-height: 2.1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: inherit;
 }
 
@@ -293,18 +293,18 @@ p {
   -webkit-box-shadow: 4px 3px 15px 0px #191919;
   box-shadow: 4px 3px 15px 0px #191919;
   border-radius: 50%;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .skill > img:hover {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .lightsOn {
