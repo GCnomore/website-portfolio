@@ -1,7 +1,7 @@
 /* -----Layout settings----- */
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   background-color: #121212;
   color: white;
 }
@@ -115,7 +115,7 @@ p {
 .bg {
   width: 100%;
   height: 100vh;
-  background-image: url('../../img/backgrounds/andre-benz-wkhyXI5hRbo-unsplash.webp');
+  background-image: url("../../img/backgrounds/andre-benz-wkhyXI5hRbo-unsplash.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -247,7 +247,7 @@ p {
 }
 
 .profile_backdrop {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   top: 0;
   -webkit-user-select: none;
@@ -262,7 +262,7 @@ p {
 .about_me {
   padding: 0 0 0 10%;
   line-height: 2.1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: inherit;
 }
 
