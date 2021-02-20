@@ -1,11 +1,11 @@
-// Porjects slider
-const pokedex = ["pokeSlideCont", "pokedexSlide"];
-const movieHunt = ["movieSlideCont", "moviehuntSlide"];
-// const thisQuiz = ['quizSlideCont', 'quizSlide'];
-const todo = ["todoSlideCont", "todoSlide"];
-const watspoppin = ["watspoppinSlideCont", "watspoppinSlide"];
-const kokoatalk = ["kokoatalkSlideCont", "kokoatalkSlide"];
-const gcboard = ["gcboardSlideCont", "gcboardSlide"];
+const projects = [
+  ["pokeSlideCont", "pokedexSlide"],
+  ["movieSlideCont", "moviehuntSlide"],
+  ["todoSlideCont", "todoSlide"],
+  ["watspoppinSlideCont", "watspoppinSlide"],
+  ["kokoatalkSlideCont", "kokoatalkSlide"],
+  ["gcboardSlideCont", "gcboardSlide"],
+];
 
 const slide = (project) => {
   const wrap = document.querySelector(`.${project[0]}`);
@@ -24,13 +24,7 @@ const slide = (project) => {
 };
 
 setInterval(() => {
-  slide(pokedex);
-  slide(movieHunt);
-  slide(gcboard);
-  // slide(thisQuiz);
-  slide(todo);
-  slide(watspoppin);
-  slide(kokoatalk);
+  projects.map((item) => slide(item));
 }, 3000);
 
 // Sort by
