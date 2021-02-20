@@ -348,20 +348,7 @@ nav {
   position: absolute;
 }
 
-.see_movieHunt {
-  text-decoration: underline solid #f2aa4c 1px;
-  cursor: pointer;
-}
-.see_pokeDex {
-  text-decoration: underline solid #f2aa4c 1px;
-  cursor: pointer;
-}
-.see_toDo {
-  text-decoration: underline solid #f2aa4c 1px;
-  cursor: pointer;
-}
-
-.see_watsPoppin {
+.see_ {
   text-decoration: underline solid #f2aa4c 1px;
   cursor: pointer;
 }

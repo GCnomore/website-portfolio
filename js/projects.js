@@ -5,6 +5,7 @@ const movieHunt = ["movieSlideCont", "moviehuntSlide"];
 const todo = ["todoSlideCont", "todoSlide"];
 const watspoppin = ["watspoppinSlideCont", "watspoppinSlide"];
 const kokoatalk = ["kokoatalkSlideCont", "kokoatalkSlide"];
+const gcboard = ["gcboardSlideCont", "gcboardSlide"];
 
 const slide = (project) => {
   const wrap = document.querySelector(`.${project[0]}`);
@@ -25,6 +26,7 @@ const slide = (project) => {
 setInterval(() => {
   slide(pokedex);
   slide(movieHunt);
+  slide(gcboard);
   // slide(thisQuiz);
   slide(todo);
   slide(watspoppin);
@@ -95,12 +97,12 @@ const logo = document.querySelector(".logo");
 const body = document.querySelector("body");
 const nav = document.querySelector(".projects_nav");
 
-const lightsOn = () => {
-  body.classList.toggle("lightsOn");
-  nav.classList.toggle("lightsOnNav");
-};
+// const lightsOn = () => {
+//   body.classList.toggle("lightsOn");
+//   nav.classList.toggle("lightsOnNav");
+// };
 
-logo.addEventListener("click", lightsOn);
+// logo.addEventListener("click", lightsOn);
 
 // Drop down menu - find me
 const isaac = document.querySelector(".isaac");
