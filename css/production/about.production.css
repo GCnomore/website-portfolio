@@ -244,6 +244,7 @@ p {
 .profile_portrait {
   border-radius: 50%;
   width: 20rem;
+  height: 20rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
