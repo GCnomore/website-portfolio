@@ -1,7 +1,8 @@
 /* -----Layout settings----- */
 body {
   margin: 0;
-  font-family: "Dosis", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #121212;
   color: white;
 }
@@ -14,6 +15,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
@@ -114,10 +119,9 @@ p {
 
 .bg {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url("../../img/backgrounds/andre-benz-wkhyXI5hRbo-unsplash.webp");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   z-index: -1;
   position: absolute;
@@ -260,10 +264,15 @@ p {
 }
 
 .about_me {
-  padding: 0 0 0 10%;
   line-height: 2.1;
   font-family: "Montserrat", sans-serif;
   color: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  padding: 0 5rem;
+  margin-left: 5rem;
 }
 
 .skillContainer {
@@ -273,13 +282,18 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skillList {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 0.4rem;
+  margin: 1rem;
 }
 
 .skill {
@@ -315,15 +329,52 @@ p {
   transition: ease-out 1s;
 }
 
+.mySkills {
+  width: 100%;
+}
+
+.hasExperience {
+  width: 100%;
+}
+
+.skillLevel {
+  width: 100%;
+}
+
+.skillLevel_grid {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 0;
+  margin: 1rem;
+  padding: 1rem 0;
+}
+
+.star_fill {
+  color: yellow;
+  animation: fillStar 2s ease-in-out;
+}
+
+@keyframes fillStar {
+  0% {
+    color: white;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
 @media screen and (max-width: 1420px) {
   .about_contents {
-    padding: 2rem 12rem 2rem 12rem;
+    padding: 2rem 12rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .about_contents {
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
   }
 }
 
@@ -342,21 +393,8 @@ p {
     margin: 0.5rem;
   }
 }
-
+/* 
 @media screen and (max-width: 940px) {
-  .about_contents {
-    padding: 2rem 3rem 2rem 3rem;
-  }
-  .profile_portrait {
-    width: 20rem;
-    height: 20rem;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .findMeWrap {
     display: none;
   }
@@ -384,6 +422,10 @@ p {
     -ms-grid-row-align: center;
     align-self: center;
   }
+  .about_me {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
   .about_contents {
     font-size: 15px;
     padding-top: 2rem;
@@ -405,9 +447,9 @@ p {
   .skill {
     margin: 0.5rem;
   }
-}
+} */
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 900px) {
   .findMeWrapSm {
     margin-left: 2rem;
   }
@@ -431,7 +473,8 @@ p {
     padding: 1rem;
   }
   .about_me {
-    padding: 0;
+    margin: 0;
+    padding: 0.5rem 1rem;
     text-align: center;
   }
   .menu {
@@ -468,12 +511,22 @@ p {
   .hasExperience > h1 {
     font-size: 25px;
   }
+  .skillLevel > h1 {
+    font-size: 25px;
+  }
   .skillList {
     margin: 0;
     padding: 0 0 1.5rem 0;
   }
   .skill {
     margin: 0.5rem;
+  }
+  .skillContainer {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .skillContainer > section {
+    margin-top: 3rem;
   }
 }
 
