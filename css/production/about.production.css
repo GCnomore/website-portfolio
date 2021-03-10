@@ -393,61 +393,6 @@ p {
     margin: 0.5rem;
   }
 }
-/* 
-@media screen and (max-width: 940px) {
-  .findMeWrap {
-    display: none;
-  }
-  .findMeWrapSm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 3rem;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .profile_portrait {
-    width: 15rem;
-    height: 15rem;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-  .about_me {
-    margin: 0;
-    padding: 0.5rem 1rem;
-  }
-  .about_contents {
-    font-size: 15px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  .skill > img {
-    width: 3rem;
-  }
-  .mySkills > h1 {
-    font-size: 25px;
-  }
-  .hasExperience > h1 {
-    font-size: 25px;
-  }
-  .skillList {
-    margin: 0;
-    padding: 0 0 1.5rem 0;
-  }
-  .skill {
-    margin: 0.5rem;
-  }
-} */
 
 @media screen and (max-width: 900px) {
   .findMeWrapSm {
