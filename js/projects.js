@@ -91,13 +91,6 @@ const logo = document.querySelector(".logo");
 const body = document.querySelector("body");
 const nav = document.querySelector(".projects_nav");
 
-// const lightsOn = () => {
-//   body.classList.toggle("lightsOn");
-//   nav.classList.toggle("lightsOnNav");
-// };
-
-// logo.addEventListener("click", lightsOn);
-
 // Drop down menu - find me
 const isaac = document.querySelector(".isaac");
 const findIcons = document.querySelector(".findIconContSm");
@@ -107,3 +100,20 @@ const showDropDown = () => {
 };
 
 isaac.addEventListener("click", showDropDown);
+
+// Restrict screen size smaller than 1024px to access version2 page
+const modal = document.querySelector(".modalBackdrop");
+
+modal.addEventListener("click", () => {
+  modal.classList.add("hide");
+});
+
+logo.addEventListener("click", () => {
+  if (screen.availWidth > 1023) {
+    console.log("ok");
+    logoWrap.setAttribute("href", "./index2.html");
+  } else {
+    modal.classList.remove("hide");
+    window.scrollTo(0, 0);
+  }
+});
