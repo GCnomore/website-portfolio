@@ -355,7 +355,8 @@ p {
 
 .star_fill {
   color: yellow;
-  animation: fillStar 2s ease-in-out;
+  animation: fillStar 3s ease-in-out;
+  transition: 0.4s;
 }
 
 @keyframes fillStar {
@@ -365,6 +366,11 @@ p {
   100% {
     color: yellow;
   }
+}
+
+.enlarge {
+  transform: scale(1.3);
+  transition: 0.4s;
 }
 
 @media screen and (max-width: 1420px) {
