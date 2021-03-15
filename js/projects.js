@@ -103,6 +103,7 @@ isaac.addEventListener("click", showDropDown);
 
 // Restrict screen size smaller than 1024px to access version2 page
 const modal = document.querySelector(".modalBackdrop");
+const logoWrap = document.querySelector(".logoWrap");
 
 modal.addEventListener("click", () => {
   modal.classList.add("hide");
