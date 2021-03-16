@@ -290,16 +290,34 @@ footer > p {
 }
 
 .index_intro {
+  display: inline-block;
   font-size: 10rem;
-  color: inherit;
   font-weight: 600;
-  text-align: center;
   font-family: "Anton", sans-serif;
-  background-color: inherit;
+  position: relative;
+  color: white;
+}
+
+.index_intro:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.3s ease-out;
+}
+
+.index_intro:hover:before {
+  width: 100%;
+  color: orange;
+  position: absolute;
 }
 
 .index_introWrap {
   padding-top: 5%;
+  text-align: center;
 }
 
 /* -----Animation properties----- */
